@@ -6,7 +6,7 @@
 Projeto desenvolvido com o objetivo de **praticar Flexbox e CSS Grid**, utilizando **HTML e CSS**.  
 A aplicação consiste em uma landing page simples do combo **Alura+ e Alura Língua**.
 
-## 🛠 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 - HTML5
 - CSS3
 - Flexbox
