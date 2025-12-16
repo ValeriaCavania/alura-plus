@@ -26,6 +26,7 @@ body{
     background-size: contain;
     align-items: center; /*usado com flexbox e grid e alinha verticalmente itens filhos de um container, ou seja, a div de uma section*/
     text-align: center; /*alinha o conteudo dentro de um bloco horizontalmente*/
+    padding: 1em 0 1em 0;
 
 }
 
@@ -33,6 +34,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    
 }
 
 .container__caixa{
@@ -167,4 +169,37 @@ body{
 .container__botao:hover{
     background-color: var(--botao_azul-efeito);
     color: var(--cor-de-fundo)
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    .container__imagem{
+        width: 50vw;
+    }
+
+    .container__caixa{
+        margin: 2em 2em;
+    }
+
+    .secundario{
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem{
+        width: 50vw;
+    }
+
+    .dispositivos__lista{
+        display: block;
+    }
+
+    .rodape__lista{
+        display: block;
+    }
+
 }
