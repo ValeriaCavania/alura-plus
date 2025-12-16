@@ -32,8 +32,6 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 50vh;
-    
 }
 
 .container__caixa{
@@ -112,7 +110,7 @@ body{
 
 .dispositivos{
     text-align: center;
-    height: 50vh;
+    
 }
 
 .dispositivos_titulo{
@@ -131,7 +129,6 @@ body{
 .rodape{
     text-align: center;
     margin: 5em 3em;
-    height: 50vh;
 }
 
 .rodape__logo{
