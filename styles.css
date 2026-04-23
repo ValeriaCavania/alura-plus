@@ -1,4 +1,4 @@
-:root{
+:root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167BF7;
@@ -7,141 +7,151 @@
     --botao_azul-efeito: #9b6bf5;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
 }
+
 /* primeira section */
-.principal{
+.principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center; /*usado com flexbox e grid e alinha verticalmente itens filhos de um container, ou seja, a div de uma section*/
-    text-align: center; /*alinha o conteudo dentro de um bloco horizontalmente*/
+    align-items: center;
+    /*usado com flexbox e grid e alinha verticalmente itens filhos de um container, ou seja, a div de uma section*/
+    text-align: center;
+    /*alinha o conteudo dentro de um bloco horizontalmente*/
+    align-items: center;
+    /*usado com flexbox e grid e alinha verticalmente itens filhos de um container, ou seja, a div de uma section*/
+    text-align: center;
+    /*alinha o conteudo dentro de um bloco horizontalmente*/
+    background-size: 100% auto;
 }
 
-.container{
-    height: 100vh;
+.container {
+    height: 50vh;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.container__caixa{
+.container__caixa {
     margin: 0 6em;
 }
 
-.container__titulo{
+.container__titulo {
     font-size: 28px;
     font-weight: 700;
 }
 
-.container__botao{
+.container__botao {
     background-color: var(--botao-azul);
     border-radius: 5px;
-    padding: 1em; /*tamanho relativo ao da fonte, portanto se a fonte é 16 o padding tb sera 16px*/
+    padding: 1em;
+    /*tamanho relativo ao da fonte, portanto se a fonte é 16 o padding tb sera 16px*/
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
 }
 
-.botao_secundario{
+.botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
 }
 
-.container__aviso{
+.container__aviso {
     font-size: 12px;
     color: var(--cinza-secundario)
 }
 
-.container__imagem{
+.container__imagem {
     margin: 1em 0 2em 0;
 }
 
 /* segunda e quarta section */
 
-.secundario__imagem{
+.secundario__imagem {
     width: 80%;
 }
 
-.secundario{
+.secundario {
     align-items: center;
-    margin: 0 10em;
+    margin: 5em 10em;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     font-weight: 700;
     font-size: 48px;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
 
-.descricao__texto{
+.descricao__texto {
     color: var(--cinza-secundario);
-    
+
 }
 
 /* terceira section */
-.secundario__botao{
+.secundario__botao {
     display: inline-block;
     margin-top: 1em;
 }
 
-.container__descricao{
+.container__descricao {
     padding: 2em;
 }
 
 /* quinta section */
-.dispositivos__lista{
+.dispositivos__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 5em 0;
 }
 
-.dispositivos{
+.dispositivos {
     text-align: center;
-    
+
 }
 
-.dispositivos_titulo{
+.dispositivos_titulo {
     font-size: 48px;
     color: var(--branco-principal);
     align-items: center;
 }
 
-.lista__item{
+.lista__item {
     font-size: 32px;
     color: var(--branco-principal);
 }
 
 /* footer */
 
-.rodape{
+.rodape {
     text-align: center;
     margin: 5em 3em;
 }
 
-.rodape__logo{
+.rodape__logo {
     align-items: center;
 }
-.rodape__lista{
+
+.rodape__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 1em;
 }
 
-.lista__link a{
+.lista__link a {
     text-decoration: none;
     font-size: 14px;
     color: var(--branco-principal);
@@ -149,54 +159,54 @@ body{
 }
 
 
-.rodape__texto{
+.rodape__texto {
     font-size: 14px;
     color: var(--cinza-secundario);
     margin: 2em 0;
 
 }
 
-.lista__link a:hover{
+.lista__link a:hover {
     color: var(--botao-azul);
 }
 
-.lista__link a:active{
+.lista__link a:active {
     color: purple
 }
 
-.container__botao:hover{
+.container__botao:hover {
     background-color: var(--botao_azul-efeito);
     color: var(--cor-de-fundo)
 }
 
-@media screen and (max-width: 768px){
-    .container{
+@media screen and (max-width: 768px) {
+    .container {
         display: block;
         background-image: none;
     }
 
-    .container__imagem{
+    .container__imagem {
         width: 50vw;
     }
 
-    .container__caixa{
+    .container__caixa {
         margin: 2em 2em;
     }
 
-    .secundario{
+    .secundario {
         margin: 0;
         text-align: center;
     }
 
-    .secundario__imagem{
+    .secundario__imagem {
         width: 50vw;
     }
 
-    .dispositivos__lista{
+    .dispositivos__lista {
         display: block;
     }
 
-    .rodape__lista{
+    .rodape__lista {
         display: block;
     }
 
